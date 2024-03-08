@@ -1,7 +1,7 @@
 <?php
 session_start();
 //------------------------------::::::::::::::::::::------------------------------\\
-// Dibuat oleh FA Team di PT. Pacifica Raya Technology \\
+//\\
 //------------------------------::::::::::::::::::::------------------------------\\
 include "../../../../config/koneksi.php";
 include "PesanRealtime.php";

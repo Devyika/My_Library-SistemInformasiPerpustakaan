@@ -1,7 +1,7 @@
 <?php
 session_start();
 //------------------------------::::::::::::::::::::------------------------------\\
-// Dibuat oleh FA Team di PT. Pacifica Raya Technology \\
+// \\
 //------------------------------::::::::::::::::::::------------------------------\\
 ?>
 <!DOCTYPE html>
@@ -67,13 +67,10 @@ session_start();
                 <p style="font-size: 11px;">- ATAU -</p>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="button" onclick="Register()" class="btn btn-block btn-warning btn-flat"><i class="fa fa-user-plus"></i> Daftar sebagai member</button>
+                        <button type="button" onclick="Register()" class="btn btn-block btn-warning btn-flat"><i class="fa fa-user-plus"></i> Daftar sebagai anggota</button>
                     </div>
                 </div>
             </div>
-
-            <p style="text-align: center; font-size: 13px;">Hak Cipta &copy; <?= date('Y'); ?> .<?= $row1['nama_app']; ?> by FA Team.</p>
-
         </div>
         <!-- /.login-box-body -->
     </div>

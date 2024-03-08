@@ -29,7 +29,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="alert alert-secondary" style="color: #383d41; background-color: #e2e3e5; border-color: #d6d8db;">
-            Selamat Datang, <?= $_SESSION['fullname']; ?> di Administrator Perpustakaan LTE CS.
+            Selamat Datang, <?= $_SESSION['fullname']; ?> di Administrator Perpustakaan MyLibrary.
         </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
@@ -49,7 +49,6 @@
                     <div class="icon">
                         <i class="fa fa-users"></i>
                     </div>
-                    <a href="anggota" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -69,7 +68,6 @@
                     <div class="icon">
                         <i class="fa fa-book"></i>
                     </div>
-                    <a href="data-buku" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -89,7 +87,6 @@
                     <div class="icon">
                         <i class="fa fa-sign-out"></i>
                     </div>
-                    <a href="data-peminjaman" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -109,9 +106,9 @@
                     <div class="icon">
                         <i class="fa fa-sign-in"></i>
                     </div>
-                    <a href="data-pengembalian" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                  
                 </div>
-            </div>
+
             <!-- ./col -->
         </div>
         <!-- /.row -->

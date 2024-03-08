@@ -7,7 +7,7 @@
             <small>
                 <script type='text/javascript'>
                     var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-                    var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                    var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
                     var date = new Date();
                     var day = date.getDate();
                     var month = date.getMonth();
@@ -50,7 +50,7 @@
                                 <input type="text" class="form-control" value="<?= $row['kode_user']; ?>" disabled>
                             </div>
                             <div class="form-group">
-                                <label>NIS <small style="color: red;">* Wajib diisi</small></label>
+                                <label>No Induk <small style="color: red;">* Wajib diisi (Isi - jika tidak ada no induk)</small></label>
                                 <input type="text" class="form-control" value="<?= $row['nis']; ?>" name="Nis" required>
                             </div>
                             <div class="form-group">
@@ -76,35 +76,35 @@
                                     }
                                     ?>
                                     <option disabled>------------------------------------------</option>
-                                    <!-- X -->
-                                    <option value="X - Administrasi Perkantoran">X - Administrasi Perkantoran</option>
-                                    <option value="X - Farmasi">X - Farmasi</option>
-                                    <option value="X - Perbankan">X - Perbankan</option>
-                                    <option value="X - Rekayasa Perangkat Lunak">X - Rekayasa Perangkat Lunak</option>
-                                    <option value="X - Tata Boga">X - Tata Boga</option>
-                                    <option value="X - Teknik Kendaraan Ringan">X - Teknik Kendaraan Ringan</option>
-                                    <option value="X - Teknik Komputer dan Jaringan">X - Teknik Komputer dan Jaringan</option>
-                                    <option value="X - Teknik Sepeda Motor">X - Teknik Sepeda Motor</option>
-                                    <!-- XI -->
+                                    <!-- SD -->
+                                    <option value="I   - SD">I   - SD</option>
+                                    <option value="II  - SD">II  - SD</option>
+                                    <option value="III - SD">III - SD</option>
+                                    <option value="IV  - SD">IV  - SD</option>
+                                    <option value="V   - SD">V   - SD</option>
+                                    <option value="VI  - SD">VI  - SD</option>
+                                    <!-- SMP -->
                                     <option disabled>------------------------------------------</option>
-                                    <option value="XI - Administrasi Perkantoran">XI - Administrasi Perkantoran</option>
-                                    <option value="XI - Farmasi">XI - Farmasi</option>
-                                    <option value="XI - Perbankan">XI - Perbankan</option>
-                                    <option value="XI - Rekayasa Perangkat Lunak">XI - Rekayasa Perangkat Lunak</option>
-                                    <option value="XI - Tata Boga">XI - Tata Boga</option>
-                                    <option value="XI - Teknik Kendaraan Ringan">XI - Teknik Kendaraan Ringan</option>
-                                    <option value="XI - Teknik Komputer dan Jaringan">XI - Teknik Komputer dan Jaringan</option>
-                                    <option value="XI - Teknik Sepeda Motor">XI - Teknik Sepeda Motor</option>
-                                    <!-- XII -->
+                                    <option value="VII  - SMP">VII  - SMP</option>
+                                    <option value="VIII - SMP">VIII - SMP</option>
+                                    <option value="IX   - SMP">IX   - SMP</option>
+                                    <!-- SMA/SMK -->
                                     <option disabled>------------------------------------------</option>
-                                    <option value="XII - Administrasi Perkantoran">XII - Administrasi Perkantoran</option>
-                                    <option value="XII - Farmasi">XII - Farmasi</option>
-                                    <option value="XII - Perbankan">XII - Perbankan</option>
-                                    <option value="XII - Rekayasa Perangkat Lunak">XII - Rekayasa Perangkat Lunak</option>
-                                    <option value="XII - Tata Boga">XII - Tata Boga</option>
-                                    <option value="XII - Teknik Kendaraan Ringan">XII - Teknik Kendaraan Ringan</option>
-                                    <option value="XII - Teknik Komputer dan Jaringan">XII - Teknik Komputer dan Jaringan</option>
-                                    <option value="XII - Teknik Sepeda Motor">XII - Teknik Sepeda Motor</option>
+                                    <option value="X   - SMA IPA"> X - SMA IPA</option>
+                                    <option value="X   - SMA IPS"> X - SMA IPS</option>
+                                    <option value="X   - SMK">     X - SMK</option>
+                                    <option value="XI  - SMA IPA"> XI - SMA IPA</option>
+                                    <option value="XI  - SMA IPS"> XI - SMA IPS</option>
+                                    <option value="XI  - SMK">     XI - SMK</option>
+                                    <option value="XII - SMA IPA">XII - SMA IPA</option>
+                                    <option value="XII - SMA IPS">XII - SMA IPS</option>
+                                    <option value="XII - SMK"    >XII - SMK</option>
+                                    <!-- Mahasiswa -->
+                                    <option disabled>------------------------------------------</option>
+                                    <option value="Mahasiswa"    >Mahasiswa</option>
+                                    <!-- Mahasiswa -->
+                                    <option disabled>------------------------------------------</option>
+                                    <option value="Lain-lain"    >Lain-lain</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -131,12 +131,12 @@
                         <!-- Animasi -->
                         <img src="../../assets/dist/img/avatar5.png" style="width: 125px; height: 125px; display: block; margin-left: auto; margin-right: auto; margin-top: -5px; margin-bottom: 15px;" loop autoplay></lottie-player>
                         <!-- -->
-                        <p style="font-weight: bold;">Kode Anggota : <?= $row['kode_user']; ?></p>
-                        <p style="font-weight: bold;">NIS : <?= $row['nis']; ?></p>
-                        <p style="font-weight: bold;">Nama Lengkap : <?= $row['fullname']; ?></p>
-                        <p style="font-weight: bold;">Nama Pengguna : <?= $row['username']; ?></p>
-                        <p style="font-weight: bold;">Kata Sandi : <?= $row['password']; ?></p>
-                        <p style="font-weight: bold;">Kelas : <?= $row['kelas']; ?></p>
+                        <p style="font-weight: bold;">Kode Anggota   : <?= $row['kode_user']; ?></p>
+                        <p style="font-weight: bold;">No induk       : <?= $row['nis']; ?></p>
+                        <p style="font-weight: bold;">Nama Lengkap   : <?= $row['fullname']; ?></p>
+                        <p style="font-weight: bold;">Nama Pengguna  : <?= $row['username']; ?></p>
+                        <p style="font-weight: bold;">Kata Sandi     : <?= $row['password']; ?></p>
+                        <p style="font-weight: bold;">Kelas          : <?= $row['kelas']; ?></p>
                         <p style="font-weight: bold;">Alamat Lengkap : <?= $row['alamat']; ?></p>
                     </div>
                     <!-- /.box-body -->
